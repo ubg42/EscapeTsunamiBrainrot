@@ -276,7 +276,7 @@ async function fetchParts(filename, count, startPct, endPct) {
         document.body.appendChild(loaderScript);
 
     } catch (err) {
-        console.error("Yükleme hatası:", err);
+
         progressBarFull.style.width = "100%";
         progressBarFull.textContent = "Yükleme hatası: " + err.message;
     }
